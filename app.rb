@@ -12,4 +12,11 @@ class App < Sinatra::Base
     erb :square
   end
 
+  get '/say/:number/:phrase' do
+    @number = params[:number]
+    @phrase = params[:phrase]
+  end
+
+  
+
 end
